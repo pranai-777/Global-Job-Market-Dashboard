@@ -186,6 +186,60 @@ st.markdown(
         font-weight: 600;
         letter-spacing: 1px;
     }
+    /* ============================================================
+   GLOBAL TEXT COLOR — WHITE ONLY
+   ============================================================ */
+
+body,
+.stApp,
+.stApp p,
+.stApp label,
+.stApp span,
+.stApp div,
+.stApp h1,
+.stApp h2,
+.stApp h3,
+.stApp h4,
+.stApp h5,
+.stApp h6 {
+    color: #FFFFFF;
+}
+
+
+/* Sidebar text */
+
+section[data-testid="stSidebar"] * {
+    color: #FFFFFF !important;
+}
+
+
+/* Plotly chart text */
+
+.js-plotly-plot .plotly text {
+    fill: #FFFFFF !important;
+}
+
+
+/* Plotly legend text */
+
+.legendtext {
+    fill: #FFFFFF !important;
+}
+
+
+/* Plotly axis text */
+
+.xtick text,
+.ytick text {
+    fill: #FFFFFF !important;
+}
+
+
+/* Chart titles */
+
+.gtitle {
+    fill: #FFFFFF !important;
+}
 
     </style>
     """,
