@@ -191,11 +191,7 @@ st.markdown(
    ============================================================ */
 
 body,
-.stApp,
-.stApp p,
-.stApp label,
-.stApp span,
-.stApp div,
+
 .stApp h1,
 .stApp h2,
 .stApp h3,
