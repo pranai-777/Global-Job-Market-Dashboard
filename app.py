@@ -206,11 +206,7 @@ body,
 }
 
 
-/* Sidebar text */
 
-section[data-testid="stSidebar"] * {
-    color: #FFFFFF !important;
-}
 
 
 /* Plotly chart text */
