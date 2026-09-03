@@ -287,27 +287,11 @@ if missing_columns:
 # ============================================================
 
 st.markdown(
-    """
-    <div class="hero">
-
-        <div class="hero-label">
-            DATA SCIENCE • AI • LABOR MARKET ANALYTICS
-        </div>
-
-        <div class="hero-title">
-            Global AI Job Market
-            <br>
-            <span>Intelligence</span>
-        </div>
-
-        <div class="hero-text">
-            Interactive analysis of global AI employment,
-            salary trends, hiring demand, industries,
-            and technical skills across the 2025 job market.
-        </div>
-
-    </div>
-    """,
+    """<div class="hero">
+<div class="hero-label">DATA SCIENCE • AI • LABOR MARKET ANALYTICS</div>
+<div class="hero-title">Global AI Job Market<br><span>Intelligence</span></div>
+<div class="hero-text">Interactive analysis of global AI employment, salary trends, hiring demand, industries, and technical skills across the 2025 job market.</div>
+</div>""",
     unsafe_allow_html=True
 )
 
@@ -462,81 +446,41 @@ k1, k2, k3, k4 = st.columns(4)
 
 
 with k1:
-
     st.markdown(
-        f"""
-        <div class="kpi kpi-gold">
-
-            <div class="kpi-label">
-                Total Jobs
-            </div>
-
-            <div class="kpi-value">
-                {total_jobs:,}
-            </div>
-
-        </div>
-        """,
+        f"""<div class="kpi kpi-gold">
+<div class="kpi-label">TOTAL JOBS</div>
+<div class="kpi-value">{total_jobs:,}</div>
+</div>""",
         unsafe_allow_html=True
     )
 
 
 with k2:
-
     st.markdown(
-        f"""
-        <div class="kpi kpi-cyan">
-
-            <div class="kpi-label">
-                Average Salary
-            </div>
-
-            <div class="kpi-value">
-                ${average_salary:,.0f}
-            </div>
-
-        </div>
-        """,
+        f"""<div class="kpi kpi-cyan">
+<div class="kpi-label">AVERAGE SALARY</div>
+<div class="kpi-value">${average_salary:,.0f}</div>
+</div>""",
         unsafe_allow_html=True
     )
 
 
 with k3:
-
     st.markdown(
-        f"""
-        <div class="kpi kpi-violet">
-
-            <div class="kpi-label">
-                Countries
-            </div>
-
-            <div class="kpi-value">
-                {total_countries}
-            </div>
-
-        </div>
-        """,
+        f"""<div class="kpi kpi-violet">
+<div class="kpi-label">COUNTRIES</div>
+<div class="kpi-value">{total_countries}</div>
+</div>""",
         unsafe_allow_html=True
     )
 
 
 with k4:
-
     st.markdown(
-        f"""
-        <div class="kpi kpi-green">
-
-            <div class="kpi-label">
-                Industries
-            </div>
-
-            <div class="kpi-value">
-                {total_industries}
-            </div>
-
-        </div>
-        """,
+        f"""<div class="kpi kpi-green">
+<div class="kpi-label">INDUSTRIES</div>
+<div class="kpi-value">{total_industries}</div>
+</div>""",
         unsafe_allow_html=True
     )
 
