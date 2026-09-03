@@ -714,59 +714,61 @@ col3, col4 = st.columns(2)
 # TOP COUNTRIES
 # ============================================================
 
+# ============================================================
+# TOP COUNTRIES
+# ============================================================
+
 with col3:
 
     country_jobs = (
-        filtered_df[
-            "company_location"
-        ]
+        filtered_df["company_location"]
         .value_counts()
         .head(10)
         .reset_index()
     )
-
 
     country_jobs.columns = [
         "Country",
         "Jobs"
     ]
 
-
     fig_countries = px.bar(
-
         country_jobs,
-
         x="Jobs",
-
         y="Country",
-
         orientation="h",
-
         title="Top Hiring Countries"
     )
-
 
     fig_countries.update_traces(
         marker_color=CYAN
     )
 
-
     fig_countries.update_layout(
-
-        **common_layout,
-
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(color=TEXT),
+        margin=dict(
+            l=40,
+            r=30,
+            t=55,
+            b=45
+        ),
+        xaxis=dict(
+            gridcolor="rgba(255,255,255,0.06)",
+            zerolinecolor="rgba(255,255,255,0.06)"
+        ),
         yaxis=dict(
             categoryorder="total ascending",
-            gridcolor="rgba(255,255,255,0.06)"
+            gridcolor="rgba(255,255,255,0.06)",
+            zerolinecolor="rgba(255,255,255,0.06)"
         )
     )
-
 
     st.plotly_chart(
         fig_countries,
         use_container_width=True
     )
-
 
 # ============================================================
 # SALARY BY COUNTRY
