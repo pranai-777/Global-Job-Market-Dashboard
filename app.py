@@ -770,6 +770,8 @@ with col3:
         use_container_width=True
     )
 
+
+
 # ============================================================
 # SALARY BY COUNTRY
 # ============================================================
@@ -778,51 +780,47 @@ with col4:
 
     country_salary = (
         filtered_df
-        .groupby(
-            "company_location"
-        )["salary_usd"]
+        .groupby("company_location")["salary_usd"]
         .mean()
-        .sort_values(
-            ascending=False
-        )
+        .sort_values(ascending=False)
         .head(10)
         .reset_index()
     )
 
-
     fig_country_salary = px.bar(
-
         country_salary,
-
         x="salary_usd",
-
         y="company_location",
-
         orientation="h",
-
         title="Average Salary by Country",
-
         text_auto=".2s"
     )
-
 
     fig_country_salary.update_traces(
         marker_color=BLUE
     )
 
-
     fig_country_salary.update_layout(
-
-        **common_layout,
-
-        xaxis_title="Salary (USD)",
-
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(color=TEXT),
+        margin=dict(
+            l=40,
+            r=30,
+            t=55,
+            b=45
+        ),
+        xaxis=dict(
+            title="Salary (USD)",
+            gridcolor="rgba(255,255,255,0.06)",
+            zerolinecolor="rgba(255,255,255,0.06)"
+        ),
         yaxis=dict(
             categoryorder="total ascending",
-            gridcolor="rgba(255,255,255,0.06)"
+            gridcolor="rgba(255,255,255,0.06)",
+            zerolinecolor="rgba(255,255,255,0.06)"
         )
     )
-
 
     st.plotly_chart(
         fig_country_salary,
