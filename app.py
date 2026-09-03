@@ -190,40 +190,7 @@ st.markdown(
    GLOBAL TEXT COLOR — WHITE ONLY
    ============================================================ */
 
-body,
 
-.stApp h2,
-.stApp h3,
-.stApp h4,
-.stApp h5,
-.stApp h6 {
-    color: #FFFFFF;
-}
-
-
-
-
-
-/* Plotly chart text */
-
-.js-plotly-plot .plotly text {
-    fill: #FFFFFF !important;
-}
-
-
-/* Plotly legend text */
-
-.legendtext {
-    fill: #FFFFFF !important;
-}
-
-
-/* Plotly axis text */
-
-.xtick text,
-.ytick text {
-    fill: #FFFFFF !important;
-}
 
 
 /* Chart titles */
