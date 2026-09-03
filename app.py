@@ -1121,7 +1121,7 @@ csv_data = display_df.to_csv(
 st.download_button(
 
     label="⬇ Download Filtered Data",
-
+     color: #C9A45A;
     data=csv_data,
 
     file_name=
@@ -1143,7 +1143,7 @@ Built with
 <br>
 Python • Pandas • Plotly • Streamlit
 <br><br>
-Data Science Portfolio Project
+Data Science Project
 </div>""",
     unsafe_allow_html=True
 )
