@@ -1121,7 +1121,7 @@ csv_data = display_df.to_csv(
 st.download_button(
 
     label="⬇ Download Filtered Data",
-     color: #C9A45A;
+     
     data=csv_data,
 
     file_name=
@@ -1137,7 +1137,6 @@ st.download_button(
 
 st.markdown(
     """<div class="footer">
-<div class="footer-title">GLOBAL AI JOB MARKET INTELLIGENCE</div>
 <br>
 Built with
 <br>
