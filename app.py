@@ -192,6 +192,8 @@ st.markdown(
 
 body,
 
+.stApp span,
+.stApp div,
 .stApp h1,
 .stApp h2,
 .stApp h3,
