@@ -1136,23 +1136,14 @@ st.download_button(
 # ============================================================
 
 st.markdown(
-    """
-    <div class="footer">
-
-        <div class="footer-title">
-            GLOBAL AI JOB MARKET INTELLIGENCE
-        </div>
-
-        <br>
-
-        Built with
-        Python • Pandas • Plotly • Streamlit
-
-        <br><br>
-
-        Data Science Portfolio Project
-
-    </div>
-    """,
+    """<div class="footer">
+<div class="footer-title">GLOBAL AI JOB MARKET INTELLIGENCE</div>
+<br>
+Built with
+<br>
+Python • Pandas • Plotly • Streamlit
+<br><br>
+Data Science Portfolio Project
+</div>""",
     unsafe_allow_html=True
 )
