@@ -191,13 +191,12 @@ st.markdown(
    ============================================================ */
 
 
+/* Plotly legend text */
 
-
-/* Chart titles */
-
-.gtitle {
+.legendtext {
     fill: #FFFFFF !important;
 }
+
 
     </style>
     """,
